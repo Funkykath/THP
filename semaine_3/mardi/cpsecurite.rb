@@ -111,4 +111,4 @@
 	9.times do 
 			boardcase.choice
 	end
-	puts "Personne a gagné"
+	puts "Personne a gagné!"
