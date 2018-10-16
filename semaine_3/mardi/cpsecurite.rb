@@ -1,5 +1,3 @@
-	require "pry"
-
 	class BoardCase
 		@j1 == 0
 		@j2 == 0
@@ -27,7 +25,7 @@
 		puts "  #{@a6}  |  #{@a7}  |  #{@a8}  "
 		check_winner
 		end
-		def win
+		def win #variable gagnante
 			[[@a0,@a1,@a2],
 			[@a3,@a4,@a5],
 			[@a6,@a7,@a8],
@@ -38,7 +36,7 @@
 			[@a6,@a4,@a2]]
 		end
 
-		def check_winner 
+		def check_winner #gagnant du game
 	  		win.each do |tab| 
 	    		if tab[0] == "O" && tab[1] == "O" && tab[2] == "O"
 	      			puts "La personne 1 a gagné"
@@ -51,7 +49,7 @@
 	    end
 
 
-		def choice
+		def choice #position de jeu
 			
 			position = gets.chomp
 			@tab << position
@@ -86,7 +84,8 @@
 		board_game
 		end
 
-		def players_name_symbole
+
+		def players_name_symbole #nom des joueurs et symbole choisi
 
 			p "Joueur 1 ton nom!"
 			@j1 = gets.chomp
@@ -98,7 +97,6 @@
 			elsif @sym_j1 == "O" 
 				@sym_j2 = "X"
 			end
-			#choix du symbole
 
 			p "Joueur 2 ton nom!"
 			@j2 = gets.chomp
@@ -109,7 +107,7 @@
 	boardcase = BoardCase.new("0", "1", "2", "3", "4", "5", "6", "7", "8")
 	boardcase.board_game
 	boardcase.players_name_symbole
-	#binding.pry
+
 	9.times do 
 			boardcase.choice
 	end
