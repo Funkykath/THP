@@ -1,4 +1,7 @@
 ruby 2.5
 
-Nous avons créer un jeu du morpion. Ce jeu a été réalisé par Antoine(tonoutt), Kath(funkykath) et Asvinie( asvinie057).
+Nous avons crée un jeu du morpion. C'est un jeu à 2 joueurs.
+
+
+Ce jeu est une réaliation d'Antoine(tonoutt), Kath(funkykath) et Asvinie (asvinie057).
 
